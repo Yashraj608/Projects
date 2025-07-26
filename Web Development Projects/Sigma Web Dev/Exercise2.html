@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2 - CSS Challenge</title>
+    <meta name="description" content="This is a challenge regarding the CSS">
+    <style>
+        div :first-child{
+            background-color: yellow;
+            color: red;
+
+        }
+        div p:not(:first-child){
+            background-color: blue;
+            color: white;
+        }
+        h1{
+          background-color: aquamarine;  
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos labore itaque dolore quod vel asperiores, amet architecto quae maxime vero, voluptates earum sint.</p>
+        <p>This is another paragraph</p>
+        <p>This is also another paragraph</p>
+    </div>
+
+     <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos labore itaque dolore quod vel asperiores, amet architecto quae maxime vero, voluptates earum sint.</p>
+        <p>This is another paragraph</p>
+        <p>This is also another paragraph</p>
+    </div>
+</body>
+</html>

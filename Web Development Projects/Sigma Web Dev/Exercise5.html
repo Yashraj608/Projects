@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 solution layout</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .orangebox{
+        height: 32px;
+        width: 32px;
+        position: fixed;
+        border-radius: 60px;
+        right: 23px;
+        bottom: 12px;
+        background-color: orange;
+    }
+    header{
+ position: sticky;
+ top: 0;
+    }
+    nav{
+        background-color: pink;
+        height: 83px;
+       
+    }
+
+    .item1{
+        background-color: peachpuff;
+        height: 70vh;
+        width: 45%;
+        display: inline-block;
+        margin:0 12px ;
+
+    }
+    .container{
+        background-color: green;
+        /* height: 230px; */
+        margin: 12px 34px;
+        text-align: center;
+        padding: 53px 23px  ;
+      
+    }
+    .item2{
+        background-color: blue;
+        height: 70vh;
+        width: 45%;
+        display: inline-block;
+        margin: 0 12px;
+
+    }
+    footer{
+        height: 100px;
+        background-color: beige;
+    }
+
+    .textbox{
+        padding: 34px;
+    border: 2px solid white;
+    margin: 10px 34vw;
+   font-size: 2em;
+   color: white;
+   border-radius: 13px;
+   background-color: black;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+<main>
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+    </div>
+
+    <div class="textbox">
+      <p>  Wecome to sigma web development </p>
+    </div>
+
+
+    <div class="orangebox"></div>
+</main>
+
+<footer>
+
+</footer>
+</body>
+</html>

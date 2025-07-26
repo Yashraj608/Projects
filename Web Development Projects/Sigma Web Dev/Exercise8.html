@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing ball</title>
+    <style>
+        .container{
+    width: 600px;
+    height: 264px;
+    background-color: blue;
+    position: relative;
+        }
+
+        .box{
+            border-radius: 56px;
+            width: 45px;
+            height: 44px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: bouncyx 3s linear infinite, bouncyY 1s ease-out infinite alternate ;
+        }
+
+        @keyframes bouncyx{
+            from{
+               left: 0;
+            }
+            to{
+        left: 100%;
+            }
+        }
+
+
+        @keyframes bouncyY {
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+  <div class="box">
+
+  </div>
+    </div>
+</body>
+</html>

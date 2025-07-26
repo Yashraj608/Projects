@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Css Selectors</title>
+    <style>
+/* .box:first-child{    
+    background-color: red;
+}
+
+.box::first-line{
+    color:yellow;
+} */
+
+.boxes *{
+    color: blue;
+    border: 2px solid black;
+}
+
+[data-color="primary"]{
+    margin-top: 34px ;
+}
+
+.box:nth-child(even){
+background-color: blue;
+margin-top: 23px;
+margin-bottom: 23px;
+color:white;
+}
+
+.boxes::before{
+    content: "Yash is good and is learning the web development";
+}
+
+.boxes::after{
+    content: "Aaj ke liye itna hi aapki tarah mein bhi maayoos hoon";
+    display: block;
+    margin-top: 23px;
+}
+
+.boxes::selection{
+    background-color: black;
+    color:aqua;
+}
+
+.box::first-letter{
+    background-color: black;
+    color: aqua;
+}
+
+input::placeholder{
+    background-color: beige;
+}
+    </style>
+</head>
+    <body>
+    
+<div class="boxes">
+    <div data-color="primary" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nesciunt officia hic consequatur reprehenderit obcaecati blanditiis eos iusto enim! Quibusdam, officiis laudantium suscipit provident minima fuga facilis minus nemo deleniti nihil eaque consequatur ullam eos dolorem rerum corrupti voluptatem! Iure, voluptatibus magnam! Rem, odit rerum!</div>
+    <div class="box">Hey i am a box</div>
+    <div class="box">Hey i am a box</div>
+    <input type="text" placeholder="Input your text">
+</div>
+</body>
+</html>
